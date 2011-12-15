@@ -1,0 +1,3957 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+  Class: NutshellCrm::Client
+  
+    &mdash; Documentation by YARD 0.7.4
+  
+</title>
+
+  <link rel="stylesheet" href="../css/style.css" type="text/css" media="screen" charset="utf-8" />
+
+  <link rel="stylesheet" href="../css/common.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  relpath = '..';
+  if (relpath != '') relpath += '/';
+</script>
+
+  <script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <script type="text/javascript" charset="utf-8">
+      if (window.top.frames.main) document.body.className = 'frames';
+    </script>
+    
+    <div id="header">
+      <div id="menu">
+  
+    <a href="../_index.html">Index (C)</a> &raquo; 
+    <span class='title'><span class='object_link'><a href="../NutshellCrm.html" title="NutshellCrm (module)">NutshellCrm</a></span></span>
+     &raquo; 
+    <span class="title">Client</span>
+  
+  
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  
+    <a id="class_list_link" href="#">Class List</a>
+  
+    <a id="method_list_link" href="#">Method List</a>
+  
+    <a id="file_list_link" href="#">File List</a>
+  
+</div>
+      <div class="clear"></div>
+    </div>
+    
+    <iframe id="search_frame"></iframe>
+    
+    <div id="content"><h1>Class: NutshellCrm::Client
+  
+  
+  
+</h1>
+
+<dl class="box">
+  
+    <dt class="r1">Inherits:</dt>
+    <dd class="r1">
+      <span class="inheritName">Object</span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next">NutshellCrm::Client</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+      </dd>
+    
+  
+  
+    
+  
+    
+      <dt class="r2">Includes:</dt>
+      <dd class="r2">HTTParty</dd>
+      
+    
+  
+  
+  
+    <dt class="r1 last">Defined in:</dt>
+    <dd class="r1 last">lib/nutshell-crm.rb</dd>
+  
+</dl>
+<div class="clear"></div>
+
+
+
+  
+  <h2>Instance Attribute Summary <small>(<a href="#" class="summary_toggle">collapse</a>)</small></h2>
+  <ul class="summary">
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#api_url-instance_method" title="#api_url (instance method)">- (Object) <strong>api_url</strong> </a>
+    
+
+    
+  </span>
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the value of attribute api_url.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#stub_responses-instance_method" title="#stub_responses (instance method)">- (Object) <strong>stub_responses</strong> </a>
+    
+
+    
+  </span>
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Global setting for stubResponses parameter.</p>
+</div></span>
+  
+</li>
+
+    
+  </ul>
+
+
+
+  
+
+  
+    <h2>
+      Instance Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#add_email-instance_method" title="#add_email (instance method)">- (Object) <strong>add_email</strong>(email_string) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Saves the given e-mail message.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#describe_custom_fields-instance_method" title="#describe_custom_fields (instance method)">- (Object) <strong>describe_custom_fields</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Gets all of the custom fields available for Leads, Accounts and Contacts,
+including appropriate meta-information.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#edit_account-instance_method" title="#edit_account (instance method)">- (Object) <strong>edit_account</strong>(account_id, rev, account) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Edit an account.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#edit_activity-instance_method" title="#edit_activity (instance method)">- (Object) <strong>edit_activity</strong>(activity_id, rev, activity) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Edit an activity.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#edit_contact-instance_method" title="#edit_contact (instance method)">- (Object) <strong>edit_contact</strong>(contact_id, rev, contact) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Edit a contact.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#edit_lead-instance_method" title="#edit_lead (instance method)">- (Object) <strong>edit_lead</strong>(lead_id, rev, lead) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Edit a lead.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#edit_step-instance_method" title="#edit_step (instance method)">- (Object) <strong>edit_step</strong>(step_id, rev, step) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Update a process step.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#find_account_types-instance_method" title="#find_account_types (instance method)">- (Object) <strong>find_account_types</strong>(order_by = nil, order_direction = nil, limit = nil, page = nil) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Get all active account types (to be applied to an account).</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#find_accounts-instance_method" title="#find_accounts (instance method)">- (Object) <strong>find_accounts</strong>(query, order_by = nil, order_direction = nil, limit = nil, page = nil, stub_responses = nil) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Find accounts matching a specified query.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#find_activities-instance_method" title="#find_activities (instance method)">- (Object) <strong>find_activities</strong>(query, order_by = nil, order_direction = nil, limit = nil, page = nil, stub_responses = nil) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Find activities matching a specified query.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#find_activity_types-instance_method" title="#find_activity_types (instance method)">- (Object) <strong>find_activity_types</strong>(order_by = nil, order_direction = nil, limit = nil, page = nil) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Get all active activity types.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#find_competitors-instance_method" title="#find_competitors (instance method)">- (Object) <strong>find_competitors</strong>(order_by = nil, order_direction = nil, limit = nil, page = nil) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Get all active Competitors.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#find_contacts-instance_method" title="#find_contacts (instance method)">- (Object) <strong>find_contacts</strong>(query, order_by = nil, order_direction = nil, limit = nil, page = nil, stub_responses = nil) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Find contacts associated with a specified account or lead.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#find_delays-instance_method" title="#find_delays (instance method)">- (Object) <strong>find_delays</strong>(order_by = nil, order_direction = nil, limit = nil, page = nil) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Get all active Delays (seen in Step responses in availableDelayIds).</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#find_industries-instance_method" title="#find_industries (instance method)">- (Object) <strong>find_industries</strong>(order_by = nil, order_direction = nil, limit = nil, page = nil) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Get all active Industries (to be applied to an account).</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#find_lead_outcomes-instance_method" title="#find_lead_outcomes (instance method)">- (Object) <strong>find_lead_outcomes</strong>(order_by = nil, order_direction = nil, limit = nil, page = nil) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Get all possible outcomes for a closed lead.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#find_leads-instance_method" title="#find_leads (instance method)">- (Object) <strong>find_leads</strong>(query, order_by = nil, order_direction = nil, limit = nil, page = nil, stub_responses = nil) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Find leads matching a specified query.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#find_markets-instance_method" title="#find_markets (instance method)">- (Object) <strong>find_markets</strong>(order_by = nil, order_direction = nil, limit = nil, page = nil) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Get all active markets.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#find_milestones-instance_method" title="#find_milestones (instance method)">- (Object) <strong>find_milestones</strong>(order_by = nil, order_direction = nil, limit = nil, page = nil) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Get all active milestones.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#find_origins-instance_method" title="#find_origins (instance method)">- (Object) <strong>find_origins</strong>(order_by = nil, order_direction = nil, limit = nil, page = nil) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Get all active Origins.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#find_products-instance_method" title="#find_products (instance method)">- (Object) <strong>find_products</strong>(order_by = nil, order_direction = nil, limit = nil, page = nil, stub_responses = nil) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Get all active products.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#find_settings-instance_method" title="#find_settings (instance method)">- (Object) <strong>find_settings</strong>(order_by = nil, order_direction = nil, limit = nil, page = nil) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Return all publicly-visible settings.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#find_sources-instance_method" title="#find_sources (instance method)">- (Object) <strong>find_sources</strong>(order_by = nil, order_direction = nil, limit = nil, page = nil) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Get all active Sources.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#find_tags-instance_method" title="#find_tags (instance method)">- (Object) <strong>find_tags</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Get all active tags.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#find_teams-instance_method" title="#find_teams (instance method)">- (Object) <strong>find_teams</strong>(order_by = nil, order_direction = nil, limit = nil, page = nil) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Get all active Teams.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#find_territories-instance_method" title="#find_territories (instance method)">- (Object) <strong>find_territories</strong>(order_by = nil, order_direction = nil, limit = nil, page = nil) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Get all territories.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#find_timeline-instance_method" title="#find_timeline (instance method)">- (Object) <strong>find_timeline</strong>(query, order_by = nil, order_direction = nil, limit = nil, page = nil, stub_responses = nil) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Find timeline events (Activities, Emails and Notes) for an Entity.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#find_users-instance_method" title="#find_users (instance method)">- (Object) <strong>find_users</strong>(order_by = nil, order_direction = nil, limit = nil, page = nil) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Get all active Users.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_account-instance_method" title="#get_account (instance method)">- (Object) <strong>get_account</strong>(account_id, rev = nil) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Get the specified Account.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_activity-instance_method" title="#get_activity (instance method)">- (Object) <strong>get_activity</strong>(activity_id, rev = nil) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Get the specified Activity.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_contact-instance_method" title="#get_contact (instance method)">- (Object) <strong>get_contact</strong>(contact_id, rev = nil) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Get the specified Contact.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_email-instance_method" title="#get_email (instance method)">- (Object) <strong>get_email</strong>(email_id, rev = nil) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Get the specified Email.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_lead-instance_method" title="#get_lead (instance method)">- (Object) <strong>get_lead</strong>(lead_id, rev = nil) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Get the specified lead.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_mobile_settings-instance_method" title="#get_mobile_settings (instance method)">- (Object) <strong>get_mobile_settings</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Return all mobile-related settings in a simple key-value array.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_note-instance_method" title="#get_note (instance method)">- (Object) <strong>get_note</strong>(note_id, rev = nil) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Get the specified Note.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_product-instance_method" title="#get_product (instance method)">- (Object) <strong>get_product</strong>(product_id, rev = nil) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Get all information for a product (including full price list).</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_update_times-instance_method" title="#get_update_times (instance method)">- (Object) <strong>get_update_times</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Gets the last-updated times of each of the provisioning bins.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_user-instance_method" title="#get_user (instance method)">- (Object) <strong>get_user</strong>(user_id = nil, rev = nil) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Get all info about a user.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#getAnalyticsReport-instance_method" title="#getAnalyticsReport (instance method)">- (Object) <strong>getAnalyticsReport</strong>(report_type, period, filter_entity = nil, options = nil) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns graph data and overview information for various sales analytics
+reports.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#initialize-instance_method" title="#initialize (instance method)">- (Client) <strong>initialize</strong>(username, api_key) </a>
+    
+
+    
+  </span>
+  
+    <span class="note title constructor">constructor</span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>A new instance of the NutshellCrm client.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#new_account-instance_method" title="#new_account (instance method)">- (Object) <strong>new_account</strong>(account) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Create a new account.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#new_activity-instance_method" title="#new_activity (instance method)">- (Object) <strong>new_activity</strong>(activity) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Create a new activity.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#new_contact-instance_method" title="#new_contact (instance method)">- (Object) <strong>new_contact</strong>(contact) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Create a new contact.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#new_lead-instance_method" title="#new_lead (instance method)">- (Object) <strong>new_lead</strong>(lead) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Create a new Lead.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#new_tag-instance_method" title="#new_tag (instance method)">- (Object) <strong>new_tag</strong>(tag) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Create a new tag.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#search_accounts-instance_method" title="#search_accounts (instance method)">- (Object) <strong>search_accounts</strong>(query, limit = nil) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Return a list of Account stubs matching a given search string.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#search_by_email-instance_method" title="#search_by_email (instance method)">- (Object) <strong>search_by_email</strong>(email_address) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Works just like searchUniversal, but only searches by email address.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#search_competitors-instance_method" title="#search_competitors (instance method)">- (Object) <strong>search_competitors</strong>(query, limit = nil) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Return a list of Competitor stubs matching a given search string.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#search_contacts-instance_method" title="#search_contacts (instance method)">- (Object) <strong>search_contacts</strong>(query, limit = nil) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Return a list of Contact stubs matching a given search string.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#search_contacts_and_users-instance_method" title="#search_contacts_and_users (instance method)">- (Object) <strong>search_contacts_and_users</strong>(query, limit = nil) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Return a list of Contact and User stubs matching a given search string.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#search_leads-instance_method" title="#search_leads (instance method)">- (Object) <strong>search_leads</strong>(query, limit = nil) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Return a list of Lead stubs matching a given search string.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#search_products-instance_method" title="#search_products (instance method)">- (Object) <strong>search_products</strong>(query, limit = nil) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Return a list of Product stubs matching a given search string.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#search_sources-instance_method" title="#search_sources (instance method)">- (Object) <strong>search_sources</strong>(query, limit = nil) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Return a list of Source stubs matching a given search string.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#search_universal-instance_method" title="#search_universal (instance method)">- (Object) <strong>search_universal</strong>(query) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Return a list of Contact, Lead, and Account stubs matching a given search
+string.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#search_users_and_teams-instance_method" title="#search_users_and_teams (instance method)">- (Object) <strong>search_users_and_teams</strong>(query, limit = nil) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Return a list of User and Team stubs matching a given search string.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+  <div id="constructor_details" class="method_details_list">
+  <h2>Constructor Details</h2>
+  
+    <div class="method_details first">
+  <p class="signature first" id="initialize-instance_method">
+  
+    - (<tt><span class='object_link'><a href="" title="NutshellCrm::Client (class)">Client</a></span></tt>) <strong>initialize</strong>(username, api_key) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>A new instance of the NutshellCrm client. Configure at <a
+href="https://app01.nutshell.com/setup/api-key">app01.nutshell.com/setup/api-key</a></p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <h3>Parameters:</h3>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>username</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>api_key</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>API key</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+24
+25
+26
+27
+28
+29
+30
+31
+32</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nutshell-crm.rb', line 24</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_initialize'>initialize</span><span class='lparen'>(</span><span class='id identifier rubyid_username'>username</span><span class='comma'>,</span> <span class='id identifier rubyid_api_key'>api_key</span><span class='rparen'>)</span>
+  <span class='ivar'>@username</span> <span class='op'>=</span> <span class='id identifier rubyid_username'>username</span>
+  <span class='ivar'>@api_key</span> <span class='op'>=</span> <span class='id identifier rubyid_api_key'>api_key</span>
+  <span class='ivar'>@stub_responses</span> <span class='op'>=</span> <span class='kw'>nil</span>
+
+  <span class='id identifier rubyid_result'>result</span> <span class='op'>=</span> <span class='id identifier rubyid_exec_request'>exec_request</span><span class='lparen'>(</span><span class='id identifier rubyid_build_payload'>build_payload</span><span class='lparen'>(</span><span class='lbrace'>{</span><span class='symbol'>:username</span> <span class='op'>=&gt;</span> <span class='ivar'>@username</span><span class='rbrace'>}</span><span class='rparen'>)</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>http://api.nutshell.com/v1/json</span><span class='tstring_end'>'</span></span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_api_host'>api_host</span> <span class='op'>=</span> <span class='id identifier rubyid_result'>result</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>api</span><span class='tstring_end'>'</span></span><span class='rbracket'>]</span>
+  <span class='ivar'>@api_url</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>https://</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_api_host'>api_host</span><span class='rbrace'>}</span><span class='tstring_content'>/api/v1/json</span><span class='tstring_end'>&quot;</span></span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+  
+</div>
+
+  <div id="instance_attr_details" class="attr_details">
+    <h2>Instance Attribute Details</h2>
+    
+      
+      <span id="api_url=-instance_method"></span>
+      <span id="api_url-instance_method"></span>
+      <div class="method_details first">
+  <p class="signature first" id="api_url-instance_method">
+  
+    - (<tt>Object</tt>) <strong>api_url</strong> 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the value of attribute api_url</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+10
+11
+12</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nutshell-crm.rb', line 10</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_api_url'>api_url</span>
+  <span class='ivar'>@api_url</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="stub_responses=-instance_method"></span>
+      <span id="stub_responses-instance_method"></span>
+      <div class="method_details ">
+  <p class="signature " id="stub_responses-instance_method">
+  
+    - (<tt>Object</tt>) <strong>stub_responses</strong> 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Global setting for stubResponses parameter.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+13
+14
+15</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nutshell-crm.rb', line 13</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_stub_responses'>stub_responses</span>
+  <span class='ivar'>@stub_responses</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+    
+    
+      <div class="method_details first">
+  <p class="signature first" id="add_email-instance_method">
+  
+    - (<tt>Object</tt>) <strong>add_email</strong>(email_string) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Saves the given e-mail message.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <h3>Parameters:</h3>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>e-mail</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>in RFC 822 format</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+37
+38
+39</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nutshell-crm.rb', line 37</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_add_email'>add_email</span><span class='lparen'>(</span><span class='id identifier rubyid_email_string'>email_string</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_exec_request'>exec_request</span> <span class='id identifier rubyid_build_payload'>build_payload</span><span class='lparen'>(</span><span class='lbrace'>{</span><span class='symbol'>:emailString</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_email_string'>email_string</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="describe_custom_fields-instance_method">
+  
+    - (<tt>Object</tt>) <strong>describe_custom_fields</strong> 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Gets all of the custom fields available for Leads, Accounts and Contacts,
+including appropriate meta-information.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<h3>Returns:</h3>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Object</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the custom fields available for Leads, Accounts and Contacts, including
+appropriate meta-information</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+44
+45
+46</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nutshell-crm.rb', line 44</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_describe_custom_fields'>describe_custom_fields</span>
+  <span class='id identifier rubyid_exec_request'>exec_request</span> <span class='id identifier rubyid_build_payload'>build_payload</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="edit_account-instance_method">
+  
+    - (<tt>Object</tt>) <strong>edit_account</strong>(account_id, rev, account) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Edit an account.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <h3>Parameters:</h3>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>account_id</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>account ID to edit</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>rev</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the revision</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>account</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>updated account information</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+56
+57
+58</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nutshell-crm.rb', line 56</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_edit_account'>edit_account</span><span class='lparen'>(</span><span class='id identifier rubyid_account_id'>account_id</span><span class='comma'>,</span> <span class='id identifier rubyid_rev'>rev</span><span class='comma'>,</span> <span class='id identifier rubyid_account'>account</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_exec_request'>exec_request</span> <span class='id identifier rubyid_build_payload'>build_payload</span><span class='lparen'>(</span><span class='lbrace'>{</span><span class='symbol'>:accountId</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_account_id'>account_id</span><span class='comma'>,</span> <span class='symbol'>:rev</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_rev'>rev</span><span class='comma'>,</span> <span class='symbol'>:account</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_account'>account</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="edit_activity-instance_method">
+  
+    - (<tt>Object</tt>) <strong>edit_activity</strong>(activity_id, rev, activity) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Edit an activity.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+61
+62
+63</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nutshell-crm.rb', line 61</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_edit_activity'>edit_activity</span><span class='lparen'>(</span><span class='id identifier rubyid_activity_id'>activity_id</span><span class='comma'>,</span> <span class='id identifier rubyid_rev'>rev</span><span class='comma'>,</span> <span class='id identifier rubyid_activity'>activity</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_exec_request'>exec_request</span> <span class='id identifier rubyid_build_payload'>build_payload</span><span class='lparen'>(</span><span class='lbrace'>{</span><span class='symbol'>:activityId</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_activity_id'>activity_id</span><span class='comma'>,</span> <span class='symbol'>:rev</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_rev'>rev</span><span class='comma'>,</span> <span class='symbol'>:activity</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_activity'>activity</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="edit_contact-instance_method">
+  
+    - (<tt>Object</tt>) <strong>edit_contact</strong>(contact_id, rev, contact) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Edit a contact.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+66
+67
+68</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nutshell-crm.rb', line 66</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_edit_contact'>edit_contact</span><span class='lparen'>(</span><span class='id identifier rubyid_contact_id'>contact_id</span><span class='comma'>,</span> <span class='id identifier rubyid_rev'>rev</span><span class='comma'>,</span> <span class='id identifier rubyid_contact'>contact</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_exec_request'>exec_request</span> <span class='id identifier rubyid_build_payload'>build_payload</span><span class='lparen'>(</span><span class='lbrace'>{</span><span class='symbol'>:contactId</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_contact_id'>contact_id</span><span class='comma'>,</span> <span class='symbol'>:rev</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_rev'>rev</span><span class='comma'>,</span> <span class='symbol'>:contact</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_contact'>contact</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="edit_lead-instance_method">
+  
+    - (<tt>Object</tt>) <strong>edit_lead</strong>(lead_id, rev, lead) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Edit a lead.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+71
+72
+73</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nutshell-crm.rb', line 71</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_edit_lead'>edit_lead</span><span class='lparen'>(</span><span class='id identifier rubyid_lead_id'>lead_id</span><span class='comma'>,</span> <span class='id identifier rubyid_rev'>rev</span><span class='comma'>,</span> <span class='id identifier rubyid_lead'>lead</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_exec_request'>exec_request</span> <span class='id identifier rubyid_build_payload'>build_payload</span><span class='lparen'>(</span><span class='lbrace'>{</span><span class='symbol'>:leadId</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_lead_id'>lead_id</span><span class='comma'>,</span> <span class='symbol'>:rev</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_rev'>rev</span><span class='comma'>,</span> <span class='symbol'>:lead</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_lead'>lead</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="edit_step-instance_method">
+  
+    - (<tt>Object</tt>) <strong>edit_step</strong>(step_id, rev, step) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Update a process step.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+76
+77
+78</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nutshell-crm.rb', line 76</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_edit_step'>edit_step</span><span class='lparen'>(</span><span class='id identifier rubyid_step_id'>step_id</span><span class='comma'>,</span> <span class='id identifier rubyid_rev'>rev</span><span class='comma'>,</span> <span class='id identifier rubyid_step'>step</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_exec_request'>exec_request</span> <span class='id identifier rubyid_build_payload'>build_payload</span><span class='lparen'>(</span><span class='lbrace'>{</span><span class='symbol'>:stepId</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_step_id'>step_id</span><span class='comma'>,</span> <span class='symbol'>:rev</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_rev'>rev</span><span class='comma'>,</span> <span class='symbol'>:step</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_step'>step</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="find_account_types-instance_method">
+  
+    - (<tt>Object</tt>) <strong>find_account_types</strong>(order_by = nil, order_direction = nil, limit = nil, page = nil) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Get all active account types (to be applied to an account).</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+88
+89
+90
+91
+92</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nutshell-crm.rb', line 88</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_find_account_types'>find_account_types</span><span class='lparen'>(</span><span class='id identifier rubyid_order_by'>order_by</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_order_direction'>order_direction</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_limit'>limit</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_page'>page</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_params'>params</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='symbol'>:orderBy</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_order_by'>order_by</span><span class='comma'>,</span> <span class='symbol'>:orderDirection</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_order_direction'>order_direction</span><span class='comma'>,</span> <span class='symbol'>:limit</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_limit'>limit</span><span class='comma'>,</span> <span class='symbol'>:page</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_page'>page</span><span class='rbrace'>}</span>
+  <span class='id identifier rubyid_payload'>payload</span> <span class='op'>=</span> <span class='id identifier rubyid_build_payload'>build_payload</span> <span class='id identifier rubyid_params'>params</span>
+  <span class='id identifier rubyid_exec_request'>exec_request</span><span class='lparen'>(</span><span class='id identifier rubyid_payload'>payload</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="find_accounts-instance_method">
+  
+    - (<tt>Object</tt>) <strong>find_accounts</strong>(query, order_by = nil, order_direction = nil, limit = nil, page = nil, stub_responses = nil) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Find accounts matching a specified query.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+81
+82
+83
+84
+85</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nutshell-crm.rb', line 81</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_find_accounts'>find_accounts</span><span class='lparen'>(</span><span class='id identifier rubyid_query'>query</span><span class='comma'>,</span> <span class='id identifier rubyid_order_by'>order_by</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_order_direction'>order_direction</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_limit'>limit</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_page'>page</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_stub_responses'>stub_responses</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_params'>params</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='symbol'>:query</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_query'>query</span><span class='comma'>,</span> <span class='symbol'>:orderBy</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_order_by'>order_by</span><span class='comma'>,</span> <span class='symbol'>:orderDirection</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_order_direction'>order_direction</span><span class='comma'>,</span> <span class='symbol'>:limit</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_limit'>limit</span><span class='comma'>,</span> <span class='symbol'>:page</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_page'>page</span><span class='comma'>,</span> <span class='symbol'>:stubResponses</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_stub_responses'>stub_responses</span><span class='rbrace'>}</span>
+  <span class='id identifier rubyid_payload'>payload</span> <span class='op'>=</span> <span class='id identifier rubyid_build_payload'>build_payload</span> <span class='id identifier rubyid_params'>params</span>
+  <span class='id identifier rubyid_exec_request'>exec_request</span><span class='lparen'>(</span><span class='id identifier rubyid_payload'>payload</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="find_activities-instance_method">
+  
+    - (<tt>Object</tt>) <strong>find_activities</strong>(query, order_by = nil, order_direction = nil, limit = nil, page = nil, stub_responses = nil) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Find activities matching a specified query.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+95
+96
+97
+98
+99</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nutshell-crm.rb', line 95</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_find_activities'>find_activities</span><span class='lparen'>(</span><span class='id identifier rubyid_query'>query</span><span class='comma'>,</span> <span class='id identifier rubyid_order_by'>order_by</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_order_direction'>order_direction</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_limit'>limit</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_page'>page</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_stub_responses'>stub_responses</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_params'>params</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='symbol'>:query</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_query'>query</span><span class='comma'>,</span> <span class='symbol'>:orderBy</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_order_by'>order_by</span><span class='comma'>,</span> <span class='symbol'>:orderDirection</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_order_direction'>order_direction</span><span class='comma'>,</span> <span class='symbol'>:limit</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_limit'>limit</span><span class='comma'>,</span> <span class='symbol'>:page</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_page'>page</span><span class='comma'>,</span> <span class='symbol'>:stubResponses</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_stub_responses'>stub_responses</span><span class='rbrace'>}</span>
+  <span class='id identifier rubyid_payload'>payload</span> <span class='op'>=</span> <span class='id identifier rubyid_build_payload'>build_payload</span> <span class='id identifier rubyid_params'>params</span>
+  <span class='id identifier rubyid_exec_request'>exec_request</span><span class='lparen'>(</span><span class='id identifier rubyid_payload'>payload</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="find_activity_types-instance_method">
+  
+    - (<tt>Object</tt>) <strong>find_activity_types</strong>(order_by = nil, order_direction = nil, limit = nil, page = nil) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Get all active activity types.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+102
+103
+104
+105
+106</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nutshell-crm.rb', line 102</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_find_activity_types'>find_activity_types</span><span class='lparen'>(</span><span class='id identifier rubyid_order_by'>order_by</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_order_direction'>order_direction</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_limit'>limit</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_page'>page</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_params'>params</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='symbol'>:orderBy</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_order_by'>order_by</span><span class='comma'>,</span> <span class='symbol'>:orderDirection</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_order_direction'>order_direction</span><span class='comma'>,</span> <span class='symbol'>:limit</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_limit'>limit</span><span class='comma'>,</span> <span class='symbol'>:page</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_page'>page</span><span class='rbrace'>}</span>
+  <span class='id identifier rubyid_payload'>payload</span> <span class='op'>=</span> <span class='id identifier rubyid_build_payload'>build_payload</span> <span class='id identifier rubyid_params'>params</span>
+  <span class='id identifier rubyid_exec_request'>exec_request</span><span class='lparen'>(</span><span class='id identifier rubyid_payload'>payload</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="find_competitors-instance_method">
+  
+    - (<tt>Object</tt>) <strong>find_competitors</strong>(order_by = nil, order_direction = nil, limit = nil, page = nil) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Get all active Competitors.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+109
+110
+111
+112
+113</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nutshell-crm.rb', line 109</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_find_competitors'>find_competitors</span><span class='lparen'>(</span><span class='id identifier rubyid_order_by'>order_by</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_order_direction'>order_direction</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_limit'>limit</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_page'>page</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_params'>params</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='symbol'>:orderBy</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_order_by'>order_by</span><span class='comma'>,</span> <span class='symbol'>:orderDirection</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_order_direction'>order_direction</span><span class='comma'>,</span> <span class='symbol'>:limit</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_limit'>limit</span><span class='comma'>,</span> <span class='symbol'>:page</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_page'>page</span><span class='rbrace'>}</span>
+  <span class='id identifier rubyid_payload'>payload</span> <span class='op'>=</span> <span class='id identifier rubyid_build_payload'>build_payload</span> <span class='id identifier rubyid_params'>params</span>
+  <span class='id identifier rubyid_exec_request'>exec_request</span><span class='lparen'>(</span><span class='id identifier rubyid_payload'>payload</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="find_contacts-instance_method">
+  
+    - (<tt>Object</tt>) <strong>find_contacts</strong>(query, order_by = nil, order_direction = nil, limit = nil, page = nil, stub_responses = nil) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Find contacts associated with a specified account or lead.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+116
+117
+118
+119
+120</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nutshell-crm.rb', line 116</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_find_contacts'>find_contacts</span><span class='lparen'>(</span><span class='id identifier rubyid_query'>query</span><span class='comma'>,</span> <span class='id identifier rubyid_order_by'>order_by</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_order_direction'>order_direction</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_limit'>limit</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_page'>page</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_stub_responses'>stub_responses</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_params'>params</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='symbol'>:query</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_query'>query</span><span class='comma'>,</span> <span class='symbol'>:orderBy</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_order_by'>order_by</span><span class='comma'>,</span> <span class='symbol'>:orderDirection</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_order_direction'>order_direction</span><span class='comma'>,</span> <span class='symbol'>:limit</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_limit'>limit</span><span class='comma'>,</span> <span class='symbol'>:page</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_page'>page</span><span class='comma'>,</span> <span class='symbol'>:stubResponses</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_stub_responses'>stub_responses</span><span class='rbrace'>}</span>
+  <span class='id identifier rubyid_payload'>payload</span> <span class='op'>=</span> <span class='id identifier rubyid_build_payload'>build_payload</span> <span class='id identifier rubyid_params'>params</span>
+  <span class='id identifier rubyid_exec_request'>exec_request</span><span class='lparen'>(</span><span class='id identifier rubyid_payload'>payload</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="find_delays-instance_method">
+  
+    - (<tt>Object</tt>) <strong>find_delays</strong>(order_by = nil, order_direction = nil, limit = nil, page = nil) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Get all active Delays (seen in Step responses in availableDelayIds).</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+123
+124
+125
+126
+127</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nutshell-crm.rb', line 123</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_find_delays'>find_delays</span><span class='lparen'>(</span><span class='id identifier rubyid_order_by'>order_by</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_order_direction'>order_direction</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_limit'>limit</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_page'>page</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_params'>params</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='symbol'>:orderBy</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_order_by'>order_by</span><span class='comma'>,</span> <span class='symbol'>:orderDirection</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_order_direction'>order_direction</span><span class='comma'>,</span> <span class='symbol'>:limit</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_limit'>limit</span><span class='comma'>,</span> <span class='symbol'>:page</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_page'>page</span><span class='rbrace'>}</span>
+  <span class='id identifier rubyid_payload'>payload</span> <span class='op'>=</span> <span class='id identifier rubyid_build_payload'>build_payload</span> <span class='id identifier rubyid_params'>params</span>
+  <span class='id identifier rubyid_exec_request'>exec_request</span><span class='lparen'>(</span><span class='id identifier rubyid_payload'>payload</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="find_industries-instance_method">
+  
+    - (<tt>Object</tt>) <strong>find_industries</strong>(order_by = nil, order_direction = nil, limit = nil, page = nil) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Get all active Industries (to be applied to an account)</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+130
+131
+132
+133
+134</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nutshell-crm.rb', line 130</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_find_industries'>find_industries</span><span class='lparen'>(</span><span class='id identifier rubyid_order_by'>order_by</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_order_direction'>order_direction</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_limit'>limit</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_page'>page</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_params'>params</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='symbol'>:orderBy</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_order_by'>order_by</span><span class='comma'>,</span> <span class='symbol'>:orderDirection</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_order_direction'>order_direction</span><span class='comma'>,</span> <span class='symbol'>:limit</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_limit'>limit</span><span class='comma'>,</span> <span class='symbol'>:page</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_page'>page</span><span class='rbrace'>}</span>
+  <span class='id identifier rubyid_payload'>payload</span> <span class='op'>=</span> <span class='id identifier rubyid_build_payload'>build_payload</span> <span class='id identifier rubyid_params'>params</span>
+  <span class='id identifier rubyid_exec_request'>exec_request</span><span class='lparen'>(</span><span class='id identifier rubyid_payload'>payload</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="find_lead_outcomes-instance_method">
+  
+    - (<tt>Object</tt>) <strong>find_lead_outcomes</strong>(order_by = nil, order_direction = nil, limit = nil, page = nil) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Get all possible outcomes for a closed lead.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+137
+138
+139
+140
+141</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nutshell-crm.rb', line 137</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_find_lead_outcomes'>find_lead_outcomes</span><span class='lparen'>(</span><span class='id identifier rubyid_order_by'>order_by</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_order_direction'>order_direction</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_limit'>limit</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_page'>page</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_params'>params</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='symbol'>:orderBy</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_order_by'>order_by</span><span class='comma'>,</span> <span class='symbol'>:orderDirection</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_order_direction'>order_direction</span><span class='comma'>,</span> <span class='symbol'>:limit</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_limit'>limit</span><span class='comma'>,</span> <span class='symbol'>:page</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_page'>page</span><span class='rbrace'>}</span>
+  <span class='id identifier rubyid_payload'>payload</span> <span class='op'>=</span> <span class='id identifier rubyid_build_payload'>build_payload</span> <span class='id identifier rubyid_params'>params</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>findLead_Outcomes</span><span class='tstring_end'>'</span></span>
+  <span class='id identifier rubyid_exec_request'>exec_request</span><span class='lparen'>(</span><span class='id identifier rubyid_payload'>payload</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="find_leads-instance_method">
+  
+    - (<tt>Object</tt>) <strong>find_leads</strong>(query, order_by = nil, order_direction = nil, limit = nil, page = nil, stub_responses = nil) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Find leads matching a specified query.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+144
+145
+146
+147
+148</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nutshell-crm.rb', line 144</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_find_leads'>find_leads</span><span class='lparen'>(</span><span class='id identifier rubyid_query'>query</span><span class='comma'>,</span> <span class='id identifier rubyid_order_by'>order_by</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_order_direction'>order_direction</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_limit'>limit</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_page'>page</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_stub_responses'>stub_responses</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_params'>params</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='symbol'>:query</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_query'>query</span><span class='comma'>,</span> <span class='symbol'>:orderBy</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_order_by'>order_by</span><span class='comma'>,</span> <span class='symbol'>:orderDirection</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_order_direction'>order_direction</span><span class='comma'>,</span> <span class='symbol'>:limit</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_limit'>limit</span><span class='comma'>,</span> <span class='symbol'>:page</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_page'>page</span><span class='comma'>,</span> <span class='symbol'>:stubResponses</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_stub_responses'>stub_responses</span><span class='rbrace'>}</span>
+  <span class='id identifier rubyid_payload'>payload</span> <span class='op'>=</span> <span class='id identifier rubyid_build_payload'>build_payload</span> <span class='id identifier rubyid_params'>params</span>
+  <span class='id identifier rubyid_exec_request'>exec_request</span><span class='lparen'>(</span><span class='id identifier rubyid_payload'>payload</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="find_markets-instance_method">
+  
+    - (<tt>Object</tt>) <strong>find_markets</strong>(order_by = nil, order_direction = nil, limit = nil, page = nil) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Get all active markets.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+151
+152
+153
+154
+155</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nutshell-crm.rb', line 151</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_find_markets'>find_markets</span><span class='lparen'>(</span><span class='id identifier rubyid_order_by'>order_by</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_order_direction'>order_direction</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_limit'>limit</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_page'>page</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_params'>params</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='symbol'>:orderBy</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_order_by'>order_by</span><span class='comma'>,</span> <span class='symbol'>:orderDirection</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_order_direction'>order_direction</span><span class='comma'>,</span> <span class='symbol'>:limit</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_limit'>limit</span><span class='comma'>,</span> <span class='symbol'>:page</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_page'>page</span><span class='rbrace'>}</span>
+  <span class='id identifier rubyid_payload'>payload</span> <span class='op'>=</span> <span class='id identifier rubyid_build_payload'>build_payload</span> <span class='id identifier rubyid_params'>params</span>
+  <span class='id identifier rubyid_exec_request'>exec_request</span><span class='lparen'>(</span><span class='id identifier rubyid_payload'>payload</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="find_milestones-instance_method">
+  
+    - (<tt>Object</tt>) <strong>find_milestones</strong>(order_by = nil, order_direction = nil, limit = nil, page = nil) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Get all active milestones.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+158
+159
+160
+161
+162</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nutshell-crm.rb', line 158</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_find_milestones'>find_milestones</span><span class='lparen'>(</span><span class='id identifier rubyid_order_by'>order_by</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_order_direction'>order_direction</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_limit'>limit</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_page'>page</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_params'>params</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='symbol'>:orderBy</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_order_by'>order_by</span><span class='comma'>,</span> <span class='symbol'>:orderDirection</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_order_direction'>order_direction</span><span class='comma'>,</span> <span class='symbol'>:limit</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_limit'>limit</span><span class='comma'>,</span> <span class='symbol'>:page</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_page'>page</span><span class='rbrace'>}</span>
+  <span class='id identifier rubyid_payload'>payload</span> <span class='op'>=</span> <span class='id identifier rubyid_build_payload'>build_payload</span> <span class='id identifier rubyid_params'>params</span>
+  <span class='id identifier rubyid_exec_request'>exec_request</span><span class='lparen'>(</span><span class='id identifier rubyid_payload'>payload</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="find_origins-instance_method">
+  
+    - (<tt>Object</tt>) <strong>find_origins</strong>(order_by = nil, order_direction = nil, limit = nil, page = nil) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Get all active Origins.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+165
+166
+167
+168
+169</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nutshell-crm.rb', line 165</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_find_origins'>find_origins</span><span class='lparen'>(</span><span class='id identifier rubyid_order_by'>order_by</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_order_direction'>order_direction</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_limit'>limit</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_page'>page</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_params'>params</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='symbol'>:orderBy</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_order_by'>order_by</span><span class='comma'>,</span> <span class='symbol'>:orderDirection</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_order_direction'>order_direction</span><span class='comma'>,</span> <span class='symbol'>:limit</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_limit'>limit</span><span class='comma'>,</span> <span class='symbol'>:page</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_page'>page</span><span class='rbrace'>}</span>
+  <span class='id identifier rubyid_payload'>payload</span> <span class='op'>=</span> <span class='id identifier rubyid_build_payload'>build_payload</span> <span class='id identifier rubyid_params'>params</span>
+  <span class='id identifier rubyid_exec_request'>exec_request</span><span class='lparen'>(</span><span class='id identifier rubyid_payload'>payload</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="find_products-instance_method">
+  
+    - (<tt>Object</tt>) <strong>find_products</strong>(order_by = nil, order_direction = nil, limit = nil, page = nil, stub_responses = nil) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Get all active products.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+172
+173
+174
+175
+176</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nutshell-crm.rb', line 172</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_find_products'>find_products</span><span class='lparen'>(</span><span class='id identifier rubyid_order_by'>order_by</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_order_direction'>order_direction</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_limit'>limit</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_page'>page</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_stub_responses'>stub_responses</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_params'>params</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='symbol'>:orderBy</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_order_by'>order_by</span><span class='comma'>,</span> <span class='symbol'>:orderDirection</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_order_direction'>order_direction</span><span class='comma'>,</span> <span class='symbol'>:limit</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_limit'>limit</span><span class='comma'>,</span> <span class='symbol'>:page</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_page'>page</span><span class='comma'>,</span> <span class='symbol'>:stubResponses</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_stub_responses'>stub_responses</span><span class='rbrace'>}</span>
+  <span class='id identifier rubyid_payload'>payload</span> <span class='op'>=</span> <span class='id identifier rubyid_build_payload'>build_payload</span> <span class='id identifier rubyid_params'>params</span>
+  <span class='id identifier rubyid_exec_request'>exec_request</span><span class='lparen'>(</span><span class='id identifier rubyid_payload'>payload</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="find_settings-instance_method">
+  
+    - (<tt>Object</tt>) <strong>find_settings</strong>(order_by = nil, order_direction = nil, limit = nil, page = nil) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Return all publicly-visible settings.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+179
+180
+181
+182
+183</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nutshell-crm.rb', line 179</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_find_settings'>find_settings</span><span class='lparen'>(</span><span class='id identifier rubyid_order_by'>order_by</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_order_direction'>order_direction</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_limit'>limit</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_page'>page</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_params'>params</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='symbol'>:orderBy</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_order_by'>order_by</span><span class='comma'>,</span> <span class='symbol'>:orderDirection</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_order_direction'>order_direction</span><span class='comma'>,</span> <span class='symbol'>:limit</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_limit'>limit</span><span class='comma'>,</span> <span class='symbol'>:page</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_page'>page</span><span class='rbrace'>}</span>
+  <span class='id identifier rubyid_payload'>payload</span> <span class='op'>=</span> <span class='id identifier rubyid_build_payload'>build_payload</span> <span class='id identifier rubyid_params'>params</span>
+  <span class='id identifier rubyid_exec_request'>exec_request</span><span class='lparen'>(</span><span class='id identifier rubyid_payload'>payload</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="find_sources-instance_method">
+  
+    - (<tt>Object</tt>) <strong>find_sources</strong>(order_by = nil, order_direction = nil, limit = nil, page = nil) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Get all active Sources.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+186
+187
+188
+189
+190</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nutshell-crm.rb', line 186</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_find_sources'>find_sources</span><span class='lparen'>(</span><span class='id identifier rubyid_order_by'>order_by</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_order_direction'>order_direction</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_limit'>limit</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_page'>page</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_params'>params</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='symbol'>:orderBy</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_order_by'>order_by</span><span class='comma'>,</span> <span class='symbol'>:orderDirection</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_order_direction'>order_direction</span><span class='comma'>,</span> <span class='symbol'>:limit</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_limit'>limit</span><span class='comma'>,</span> <span class='symbol'>:page</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_page'>page</span><span class='rbrace'>}</span>
+  <span class='id identifier rubyid_payload'>payload</span> <span class='op'>=</span> <span class='id identifier rubyid_build_payload'>build_payload</span> <span class='id identifier rubyid_params'>params</span>
+  <span class='id identifier rubyid_exec_request'>exec_request</span><span class='lparen'>(</span><span class='id identifier rubyid_payload'>payload</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="find_tags-instance_method">
+  
+    - (<tt>Object</tt>) <strong>find_tags</strong> 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Get all active tags.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+193
+194
+195</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nutshell-crm.rb', line 193</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_find_tags'>find_tags</span>
+  <span class='id identifier rubyid_exec_request'>exec_request</span> <span class='id identifier rubyid_build_payload'>build_payload</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="find_teams-instance_method">
+  
+    - (<tt>Object</tt>) <strong>find_teams</strong>(order_by = nil, order_direction = nil, limit = nil, page = nil) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Get all active Teams.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+198
+199
+200
+201
+202</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nutshell-crm.rb', line 198</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_find_teams'>find_teams</span><span class='lparen'>(</span><span class='id identifier rubyid_order_by'>order_by</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_order_direction'>order_direction</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_limit'>limit</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_page'>page</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_params'>params</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='symbol'>:orderBy</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_order_by'>order_by</span><span class='comma'>,</span> <span class='symbol'>:orderDirection</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_order_direction'>order_direction</span><span class='comma'>,</span> <span class='symbol'>:limit</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_limit'>limit</span><span class='comma'>,</span> <span class='symbol'>:page</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_page'>page</span><span class='rbrace'>}</span>
+  <span class='id identifier rubyid_payload'>payload</span> <span class='op'>=</span> <span class='id identifier rubyid_build_payload'>build_payload</span> <span class='id identifier rubyid_params'>params</span>
+  <span class='id identifier rubyid_exec_request'>exec_request</span><span class='lparen'>(</span><span class='id identifier rubyid_payload'>payload</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="find_territories-instance_method">
+  
+    - (<tt>Object</tt>) <strong>find_territories</strong>(order_by = nil, order_direction = nil, limit = nil, page = nil) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Get all territories.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+205
+206
+207
+208
+209</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nutshell-crm.rb', line 205</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_find_territories'>find_territories</span><span class='lparen'>(</span><span class='id identifier rubyid_order_by'>order_by</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_order_direction'>order_direction</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_limit'>limit</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_page'>page</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_params'>params</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='symbol'>:orderBy</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_order_by'>order_by</span><span class='comma'>,</span> <span class='symbol'>:orderDirection</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_order_direction'>order_direction</span><span class='comma'>,</span> <span class='symbol'>:limit</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_limit'>limit</span><span class='comma'>,</span> <span class='symbol'>:page</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_page'>page</span><span class='rbrace'>}</span>
+  <span class='id identifier rubyid_payload'>payload</span> <span class='op'>=</span> <span class='id identifier rubyid_build_payload'>build_payload</span> <span class='id identifier rubyid_params'>params</span>
+  <span class='id identifier rubyid_exec_request'>exec_request</span><span class='lparen'>(</span><span class='id identifier rubyid_payload'>payload</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="find_timeline-instance_method">
+  
+    - (<tt>Object</tt>) <strong>find_timeline</strong>(query, order_by = nil, order_direction = nil, limit = nil, page = nil, stub_responses = nil) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Find timeline events (Activities, Emails and Notes) for an Entity.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+212
+213
+214
+215
+216</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nutshell-crm.rb', line 212</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_find_timeline'>find_timeline</span><span class='lparen'>(</span><span class='id identifier rubyid_query'>query</span><span class='comma'>,</span> <span class='id identifier rubyid_order_by'>order_by</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_order_direction'>order_direction</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_limit'>limit</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_page'>page</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_stub_responses'>stub_responses</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_params'>params</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='symbol'>:query</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_query'>query</span><span class='comma'>,</span> <span class='symbol'>:orderBy</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_order_by'>order_by</span><span class='comma'>,</span> <span class='symbol'>:orderDirection</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_order_direction'>order_direction</span><span class='comma'>,</span> <span class='symbol'>:limit</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_limit'>limit</span><span class='comma'>,</span> <span class='symbol'>:page</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_page'>page</span><span class='comma'>,</span> <span class='symbol'>:stubResponses</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_stub_responses'>stub_responses</span><span class='rbrace'>}</span>
+  <span class='id identifier rubyid_payload'>payload</span> <span class='op'>=</span> <span class='id identifier rubyid_build_payload'>build_payload</span> <span class='id identifier rubyid_params'>params</span>
+  <span class='id identifier rubyid_exec_request'>exec_request</span><span class='lparen'>(</span><span class='id identifier rubyid_payload'>payload</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="find_users-instance_method">
+  
+    - (<tt>Object</tt>) <strong>find_users</strong>(order_by = nil, order_direction = nil, limit = nil, page = nil) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Get all active Users.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+219
+220
+221
+222
+223</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nutshell-crm.rb', line 219</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_find_users'>find_users</span><span class='lparen'>(</span><span class='id identifier rubyid_order_by'>order_by</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_order_direction'>order_direction</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_limit'>limit</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_page'>page</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_params'>params</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='symbol'>:orderBy</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_order_by'>order_by</span><span class='comma'>,</span> <span class='symbol'>:orderDirection</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_order_direction'>order_direction</span><span class='comma'>,</span> <span class='symbol'>:limit</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_limit'>limit</span><span class='comma'>,</span> <span class='symbol'>:page</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_page'>page</span><span class='rbrace'>}</span>
+  <span class='id identifier rubyid_payload'>payload</span> <span class='op'>=</span> <span class='id identifier rubyid_build_payload'>build_payload</span> <span class='id identifier rubyid_params'>params</span>
+  <span class='id identifier rubyid_exec_request'>exec_request</span><span class='lparen'>(</span><span class='id identifier rubyid_payload'>payload</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="get_account-instance_method">
+  
+    - (<tt>Object</tt>) <strong>get_account</strong>(account_id, rev = nil) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Get the specified Account.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+226
+227
+228
+229</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nutshell-crm.rb', line 226</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_account'>get_account</span><span class='lparen'>(</span><span class='id identifier rubyid_account_id'>account_id</span><span class='comma'>,</span> <span class='id identifier rubyid_rev'>rev</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_params'>params</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='symbol'>:accountId</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_account_id'>account_id</span><span class='comma'>,</span> <span class='symbol'>:rev</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_rev'>rev</span><span class='rbrace'>}</span>
+  <span class='id identifier rubyid_exec_request'>exec_request</span> <span class='id identifier rubyid_build_payload'>build_payload</span><span class='lparen'>(</span><span class='id identifier rubyid_params'>params</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="get_activity-instance_method">
+  
+    - (<tt>Object</tt>) <strong>get_activity</strong>(activity_id, rev = nil) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Get the specified Activity.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+232
+233
+234
+235</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nutshell-crm.rb', line 232</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_activity'>get_activity</span><span class='lparen'>(</span><span class='id identifier rubyid_activity_id'>activity_id</span><span class='comma'>,</span> <span class='id identifier rubyid_rev'>rev</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_params'>params</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='symbol'>:activityId</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_activity_id'>activity_id</span><span class='comma'>,</span> <span class='symbol'>:rev</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_rev'>rev</span><span class='rbrace'>}</span>
+  <span class='id identifier rubyid_exec_request'>exec_request</span> <span class='id identifier rubyid_build_payload'>build_payload</span><span class='lparen'>(</span><span class='id identifier rubyid_params'>params</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="get_contact-instance_method">
+  
+    - (<tt>Object</tt>) <strong>get_contact</strong>(contact_id, rev = nil) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Get the specified Contact.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+244
+245
+246
+247</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nutshell-crm.rb', line 244</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_contact'>get_contact</span><span class='lparen'>(</span><span class='id identifier rubyid_contact_id'>contact_id</span><span class='comma'>,</span> <span class='id identifier rubyid_rev'>rev</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_params'>params</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='symbol'>:contactId</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_contact_id'>contact_id</span><span class='comma'>,</span> <span class='symbol'>:rev</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_rev'>rev</span><span class='rbrace'>}</span>
+  <span class='id identifier rubyid_exec_request'>exec_request</span> <span class='id identifier rubyid_build_payload'>build_payload</span><span class='lparen'>(</span><span class='id identifier rubyid_params'>params</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="get_email-instance_method">
+  
+    - (<tt>Object</tt>) <strong>get_email</strong>(email_id, rev = nil) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Get the specified Email.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+250
+251
+252
+253</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nutshell-crm.rb', line 250</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_email'>get_email</span><span class='lparen'>(</span><span class='id identifier rubyid_email_id'>email_id</span><span class='comma'>,</span> <span class='id identifier rubyid_rev'>rev</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_params'>params</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='symbol'>:emailId</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_email_id'>email_id</span><span class='comma'>,</span> <span class='symbol'>:rev</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_rev'>rev</span><span class='rbrace'>}</span>
+  <span class='id identifier rubyid_exec_request'>exec_request</span> <span class='id identifier rubyid_build_payload'>build_payload</span><span class='lparen'>(</span><span class='id identifier rubyid_params'>params</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="get_lead-instance_method">
+  
+    - (<tt>Object</tt>) <strong>get_lead</strong>(lead_id, rev = nil) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Get the specified lead.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+256
+257
+258
+259</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nutshell-crm.rb', line 256</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_lead'>get_lead</span><span class='lparen'>(</span><span class='id identifier rubyid_lead_id'>lead_id</span><span class='comma'>,</span> <span class='id identifier rubyid_rev'>rev</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_params'>params</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='symbol'>:leadId</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_lead_id'>lead_id</span><span class='comma'>,</span> <span class='symbol'>:rev</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_rev'>rev</span><span class='rbrace'>}</span>
+  <span class='id identifier rubyid_exec_request'>exec_request</span> <span class='id identifier rubyid_build_payload'>build_payload</span><span class='lparen'>(</span><span class='id identifier rubyid_params'>params</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="get_mobile_settings-instance_method">
+  
+    - (<tt>Object</tt>) <strong>get_mobile_settings</strong> 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Return all mobile-related settings in a simple key-value array.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+262
+263
+264</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nutshell-crm.rb', line 262</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_mobile_settings'>get_mobile_settings</span>
+  <span class='id identifier rubyid_exec_request'>exec_request</span> <span class='id identifier rubyid_build_payload'>build_payload</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="get_note-instance_method">
+  
+    - (<tt>Object</tt>) <strong>get_note</strong>(note_id, rev = nil) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Get the specified Note.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+267
+268
+269
+270</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nutshell-crm.rb', line 267</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_note'>get_note</span><span class='lparen'>(</span><span class='id identifier rubyid_note_id'>note_id</span><span class='comma'>,</span> <span class='id identifier rubyid_rev'>rev</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_params'>params</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='symbol'>:noteId</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_note_id'>note_id</span><span class='comma'>,</span> <span class='symbol'>:rev</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_rev'>rev</span><span class='rbrace'>}</span>
+  <span class='id identifier rubyid_exec_request'>exec_request</span> <span class='id identifier rubyid_build_payload'>build_payload</span><span class='lparen'>(</span><span class='id identifier rubyid_params'>params</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="get_product-instance_method">
+  
+    - (<tt>Object</tt>) <strong>get_product</strong>(product_id, rev = nil) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Get all information for a product (including full price list).</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+273
+274
+275
+276</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nutshell-crm.rb', line 273</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_product'>get_product</span><span class='lparen'>(</span><span class='id identifier rubyid_product_id'>product_id</span><span class='comma'>,</span> <span class='id identifier rubyid_rev'>rev</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_params'>params</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='symbol'>:productId</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_product_id'>product_id</span><span class='comma'>,</span> <span class='symbol'>:rev</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_rev'>rev</span><span class='rbrace'>}</span>
+  <span class='id identifier rubyid_exec_request'>exec_request</span> <span class='id identifier rubyid_build_payload'>build_payload</span><span class='lparen'>(</span><span class='id identifier rubyid_params'>params</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="get_update_times-instance_method">
+  
+    - (<tt>Object</tt>) <strong>get_update_times</strong> 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Gets the last-updated times of each of the provisioning bins.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+279
+280
+281</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nutshell-crm.rb', line 279</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_update_times'>get_update_times</span>
+  <span class='id identifier rubyid_exec_request'>exec_request</span> <span class='id identifier rubyid_build_payload'>build_payload</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="get_user-instance_method">
+  
+    - (<tt>Object</tt>) <strong>get_user</strong>(user_id = nil, rev = nil) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Get all info about a user.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+284
+285
+286
+287</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nutshell-crm.rb', line 284</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_user'>get_user</span><span class='lparen'>(</span><span class='id identifier rubyid_user_id'>user_id</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_rev'>rev</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_params'>params</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='symbol'>:userId</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_user_id'>user_id</span><span class='comma'>,</span> <span class='symbol'>:rev</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_rev'>rev</span><span class='rbrace'>}</span>
+  <span class='id identifier rubyid_exec_request'>exec_request</span> <span class='id identifier rubyid_build_payload'>build_payload</span><span class='lparen'>(</span><span class='id identifier rubyid_params'>params</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="getAnalyticsReport-instance_method">
+  
+    - (<tt>Object</tt>) <strong>getAnalyticsReport</strong>(report_type, period, filter_entity = nil, options = nil) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns graph data and overview information for various sales analytics
+reports.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+238
+239
+240
+241</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nutshell-crm.rb', line 238</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_getAnalyticsReport'>getAnalyticsReport</span><span class='lparen'>(</span><span class='id identifier rubyid_report_type'>report_type</span><span class='comma'>,</span> <span class='id identifier rubyid_period'>period</span><span class='comma'>,</span> <span class='id identifier rubyid_filter_entity'>filter_entity</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_params'>params</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='symbol'>:reportType</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_report_type'>report_type</span><span class='comma'>,</span> <span class='symbol'>:period</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_period'>period</span><span class='comma'>,</span> <span class='symbol'>:filter</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_filter_entity'>filter_entity</span><span class='comma'>,</span> <span class='symbol'>:options</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_options'>options</span><span class='rbrace'>}</span>
+  <span class='id identifier rubyid_exec_request'>exec_request</span> <span class='id identifier rubyid_build_payload'>build_payload</span><span class='lparen'>(</span><span class='id identifier rubyid_params'>params</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="new_account-instance_method">
+  
+    - (<tt>Object</tt>) <strong>new_account</strong>(account) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Create a new account.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+290
+291
+292</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nutshell-crm.rb', line 290</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_new_account'>new_account</span><span class='lparen'>(</span><span class='id identifier rubyid_account'>account</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_exec_request'>exec_request</span> <span class='id identifier rubyid_build_payload'>build_payload</span><span class='lparen'>(</span><span class='lbrace'>{</span><span class='symbol'>:account</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_account'>account</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="new_activity-instance_method">
+  
+    - (<tt>Object</tt>) <strong>new_activity</strong>(activity) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Create a new activity.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+295
+296
+297</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nutshell-crm.rb', line 295</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_new_activity'>new_activity</span><span class='lparen'>(</span><span class='id identifier rubyid_activity'>activity</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_exec_request'>exec_request</span> <span class='id identifier rubyid_build_payload'>build_payload</span><span class='lparen'>(</span><span class='lbrace'>{</span><span class='symbol'>:activity</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_activity'>activity</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="new_contact-instance_method">
+  
+    - (<tt>Object</tt>) <strong>new_contact</strong>(contact) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Create a new contact.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+300
+301
+302</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nutshell-crm.rb', line 300</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_new_contact'>new_contact</span><span class='lparen'>(</span><span class='id identifier rubyid_contact'>contact</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_exec_request'>exec_request</span> <span class='id identifier rubyid_build_payload'>build_payload</span><span class='lparen'>(</span><span class='lbrace'>{</span><span class='symbol'>:contact</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_contact'>contact</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="new_lead-instance_method">
+  
+    - (<tt>Object</tt>) <strong>new_lead</strong>(lead) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Create a new Lead.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+305
+306
+307</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nutshell-crm.rb', line 305</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_new_lead'>new_lead</span><span class='lparen'>(</span><span class='id identifier rubyid_lead'>lead</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_exec_request'>exec_request</span> <span class='id identifier rubyid_build_payload'>build_payload</span><span class='lparen'>(</span><span class='lbrace'>{</span><span class='symbol'>:lead</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_lead'>lead</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="new_tag-instance_method">
+  
+    - (<tt>Object</tt>) <strong>new_tag</strong>(tag) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Create a new tag.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <h3>Parameters:</h3>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>tag</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>See <a
+href="http://www.nutshell.com/api/detail/class_nut___api__render__model___tag.html">Nut_Api_Render_Model_Tag</a></p>
+</div>
+      
+    </li>
+  
+</ul>
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+313
+314
+315</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nutshell-crm.rb', line 313</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_new_tag'>new_tag</span><span class='lparen'>(</span><span class='id identifier rubyid_tag'>tag</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_exec_request'>exec_request</span> <span class='id identifier rubyid_build_payload'>build_payload</span><span class='lparen'>(</span><span class='lbrace'>{</span><span class='symbol'>:tag</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_tag'>tag</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="search_accounts-instance_method">
+  
+    - (<tt>Object</tt>) <strong>search_accounts</strong>(query, limit = nil) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Return a list of Account stubs matching a given search string.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+318
+319
+320</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nutshell-crm.rb', line 318</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_search_accounts'>search_accounts</span><span class='lparen'>(</span><span class='id identifier rubyid_query'>query</span><span class='comma'>,</span> <span class='id identifier rubyid_limit'>limit</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_exec_request'>exec_request</span> <span class='id identifier rubyid_build_payload'>build_payload</span><span class='lparen'>(</span><span class='lbrace'>{</span><span class='symbol'>:string</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_query'>query</span><span class='comma'>,</span> <span class='symbol'>:limit</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_limit'>limit</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="search_by_email-instance_method">
+  
+    - (<tt>Object</tt>) <strong>search_by_email</strong>(email_address) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Works just like searchUniversal, but only searches by email address.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+323
+324
+325</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nutshell-crm.rb', line 323</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_search_by_email'>search_by_email</span><span class='lparen'>(</span><span class='id identifier rubyid_email_address'>email_address</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_exec_request'>exec_request</span> <span class='id identifier rubyid_build_payload'>build_payload</span><span class='lparen'>(</span><span class='lbrace'>{</span><span class='symbol'>:emailAddressString</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_email_address'>email_address</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="search_competitors-instance_method">
+  
+    - (<tt>Object</tt>) <strong>search_competitors</strong>(query, limit = nil) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Return a list of Competitor stubs matching a given search string.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+328
+329
+330</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nutshell-crm.rb', line 328</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_search_competitors'>search_competitors</span><span class='lparen'>(</span><span class='id identifier rubyid_query'>query</span><span class='comma'>,</span> <span class='id identifier rubyid_limit'>limit</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_exec_request'>exec_request</span> <span class='id identifier rubyid_build_payload'>build_payload</span><span class='lparen'>(</span><span class='lbrace'>{</span><span class='symbol'>:string</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_query'>query</span><span class='comma'>,</span> <span class='symbol'>:limit</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_limit'>limit</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="search_contacts-instance_method">
+  
+    - (<tt>Object</tt>) <strong>search_contacts</strong>(query, limit = nil) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Return a list of Contact stubs matching a given search string.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+333
+334
+335</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nutshell-crm.rb', line 333</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_search_contacts'>search_contacts</span><span class='lparen'>(</span><span class='id identifier rubyid_query'>query</span><span class='comma'>,</span> <span class='id identifier rubyid_limit'>limit</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_exec_request'>exec_request</span> <span class='id identifier rubyid_build_payload'>build_payload</span><span class='lparen'>(</span><span class='lbrace'>{</span><span class='symbol'>:string</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_query'>query</span><span class='comma'>,</span> <span class='symbol'>:limit</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_limit'>limit</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="search_contacts_and_users-instance_method">
+  
+    - (<tt>Object</tt>) <strong>search_contacts_and_users</strong>(query, limit = nil) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Return a list of Contact and User stubs matching a given search string.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+338
+339
+340</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nutshell-crm.rb', line 338</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_search_contacts_and_users'>search_contacts_and_users</span><span class='lparen'>(</span><span class='id identifier rubyid_query'>query</span><span class='comma'>,</span> <span class='id identifier rubyid_limit'>limit</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_exec_request'>exec_request</span> <span class='id identifier rubyid_build_payload'>build_payload</span><span class='lparen'>(</span><span class='lbrace'>{</span><span class='symbol'>:string</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_query'>query</span><span class='comma'>,</span> <span class='symbol'>:limit</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_limit'>limit</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="search_leads-instance_method">
+  
+    - (<tt>Object</tt>) <strong>search_leads</strong>(query, limit = nil) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Return a list of Lead stubs matching a given search string.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+343
+344
+345</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nutshell-crm.rb', line 343</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_search_leads'>search_leads</span><span class='lparen'>(</span><span class='id identifier rubyid_query'>query</span><span class='comma'>,</span> <span class='id identifier rubyid_limit'>limit</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_exec_request'>exec_request</span> <span class='id identifier rubyid_build_payload'>build_payload</span><span class='lparen'>(</span><span class='lbrace'>{</span><span class='symbol'>:string</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_query'>query</span><span class='comma'>,</span> <span class='symbol'>:limit</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_limit'>limit</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="search_products-instance_method">
+  
+    - (<tt>Object</tt>) <strong>search_products</strong>(query, limit = nil) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Return a list of Product stubs matching a given search string.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+348
+349
+350</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nutshell-crm.rb', line 348</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_search_products'>search_products</span><span class='lparen'>(</span><span class='id identifier rubyid_query'>query</span><span class='comma'>,</span> <span class='id identifier rubyid_limit'>limit</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_exec_request'>exec_request</span> <span class='id identifier rubyid_build_payload'>build_payload</span><span class='lparen'>(</span><span class='lbrace'>{</span><span class='symbol'>:string</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_query'>query</span><span class='comma'>,</span> <span class='symbol'>:limit</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_limit'>limit</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="search_sources-instance_method">
+  
+    - (<tt>Object</tt>) <strong>search_sources</strong>(query, limit = nil) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Return a list of Source stubs matching a given search string.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+353
+354
+355</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nutshell-crm.rb', line 353</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_search_sources'>search_sources</span><span class='lparen'>(</span><span class='id identifier rubyid_query'>query</span><span class='comma'>,</span> <span class='id identifier rubyid_limit'>limit</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_exec_request'>exec_request</span> <span class='id identifier rubyid_build_payload'>build_payload</span><span class='lparen'>(</span><span class='lbrace'>{</span><span class='symbol'>:string</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_query'>query</span><span class='comma'>,</span> <span class='symbol'>:limit</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_limit'>limit</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="search_universal-instance_method">
+  
+    - (<tt>Object</tt>) <strong>search_universal</strong>(query) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Return a list of Contact, Lead, and Account stubs matching a given search
+string.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+358
+359
+360</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nutshell-crm.rb', line 358</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_search_universal'>search_universal</span><span class='lparen'>(</span><span class='id identifier rubyid_query'>query</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_exec_request'>exec_request</span> <span class='id identifier rubyid_build_payload'>build_payload</span><span class='lparen'>(</span><span class='lbrace'>{</span><span class='symbol'>:string</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_query'>query</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="search_users_and_teams-instance_method">
+  
+    - (<tt>Object</tt>) <strong>search_users_and_teams</strong>(query, limit = nil) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Return a list of User and Team stubs matching a given search string.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+363
+364
+365</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nutshell-crm.rb', line 363</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_search_users_and_teams'>search_users_and_teams</span><span class='lparen'>(</span><span class='id identifier rubyid_query'>query</span><span class='comma'>,</span> <span class='id identifier rubyid_limit'>limit</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_exec_request'>exec_request</span> <span class='id identifier rubyid_build_payload'>build_payload</span><span class='lparen'>(</span><span class='lbrace'>{</span><span class='symbol'>:string</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_query'>query</span><span class='comma'>,</span> <span class='symbol'>:limit</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_limit'>limit</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+    
+    <div id="footer">
+  Generated on Thu Dec 15 10:12:00 2011 by 
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.7.4 (ruby-1.9.3).
+</div>
+
+  </body>
+</html>
