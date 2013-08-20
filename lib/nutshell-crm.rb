@@ -2,6 +2,7 @@ require "nutshell-crm/version"
 
 require 'json'
 require 'httparty'
+require 'digest/md5'
 
 # @author Michael Shafrir
 module NutshellCrm
@@ -12,8 +13,11 @@ module NutshellCrm
     # Global setting for stubResponses parameter.
     attr_accessor :stub_responses
 
+    attr_accessor :cache
+
     include HTTParty
     format :json
+
 
     # A new instance of the NutshellCrm client.
     # Configure at https://app01.nutshell.com/setup/api-key
@@ -21,10 +25,11 @@ module NutshellCrm
     # @param [String] username
     # @param [String] api_key
     #   API key
-    def initialize(username, api_key)
+    def initialize(username, api_key, cache = nil)
       @username = username
       @api_key = api_key
       @stub_responses = nil
+      @cache = cache
 
       result = exec_request(build_payload({:username => @username}), 'http://api.nutshell.com/v1/json')
       api_host = result['api']
@@ -144,7 +149,7 @@ module NutshellCrm
     def find_leads(query, order_by = nil, order_direction = nil, limit = nil, page = nil, stub_responses = nil)
       params = {:query => query, :orderBy => order_by, :orderDirection => order_direction, :limit => limit, :page => page, :stubResponses => stub_responses}
       payload = build_payload params
-      exec_request(payload)
+      exec_request payload, nil, build_cache_key(params)
     end
 
     # Get all active markets.
@@ -225,7 +230,7 @@ module NutshellCrm
     # Get the specified Account.
     def get_account(account_id, rev = nil)
       params = {:accountId => account_id, :rev => rev}
-      exec_request build_payload(params)
+      exec_request build_payload(params), nil, build_cache_key(params)
     end
 
     # Get the specified Activity.
@@ -243,36 +248,36 @@ module NutshellCrm
     # Get the specified Contact.
     def get_contact(contact_id, rev = nil)
       params = {:contactId => contact_id, :rev => rev}
-      exec_request build_payload(params)
+      exec_request build_payload(params), nil, build_cache_key(params)
     end
 
     # Get the specified Email.
     def get_email(email_id, rev = nil)
       params = {:emailId => email_id, :rev => rev}
-      exec_request build_payload(params)
+      exec_request build_payload(params) , build_cache_key(params)
     end
 
     # Get the specified lead.
     def get_lead(lead_id, rev = nil)
       params = {:leadId => lead_id, :rev => rev}
-      exec_request build_payload(params)
+      exec_request build_payload(params), nil, build_cache_key(params)
     end
 
-    # Return all mobile-related settings in a simple key-value array.
-    def get_mobile_settings
-      exec_request build_payload
-    end
+    ## Return all mobile-related settings in a simple key-value array.
+    #def get_mobile_settings
+    #  exec_request build_payload
+    #end
 
     # Get the specified Note.
     def get_note(note_id, rev = nil)
       params = {:noteId => note_id, :rev => rev}
-      exec_request build_payload(params)
+      exec_request build_payload(params) , nil, build_cache_key(params)
     end
 
     # Get all information for a product (including full price list).
     def get_product(product_id, rev = nil)
       params = {:productId => product_id, :rev => rev}
-      exec_request build_payload(params)
+      exec_request build_payload(params), nil, build_cache_key(params)
     end
 
     # Gets the last-updated times of each of the provisioning bins.
@@ -283,7 +288,7 @@ module NutshellCrm
     # Get all info about a user.
     def get_user(user_id = nil, rev = nil)
       params = {:userId => user_id, :rev => rev}
-      exec_request build_payload(params)
+      exec_request build_payload(params), nil, build_cache_key(params)
     end
 
     # Create a new account.
@@ -321,7 +326,8 @@ module NutshellCrm
 
     # Works just like searchUniversal, but only searches by email address.
     def search_by_email(email_address)
-      exec_request build_payload({:emailAddressString => email_address})
+      params = {:emailAddressString => email_address}
+      exec_request build_payload(params)
     end
 
     # Return a list of Competitor stubs matching a given search string.
@@ -341,7 +347,8 @@ module NutshellCrm
 
     # Return a list of Lead stubs matching a given search string.
     def search_leads(query, limit = nil)
-      exec_request build_payload({:string => query, :limit => limit})
+      params = {:string => query, :limit => limit}
+      exec_request build_payload(params), nil, build_cache_key(params)
     end
 
     # Return a list of Product stubs matching a given search string.
@@ -363,8 +370,6 @@ module NutshellCrm
     def search_users_and_teams(query, limit = nil)
       exec_request build_payload({:string => query, :limit => limit})
     end
-
-
 
 
     private
@@ -392,7 +397,7 @@ module NutshellCrm
       payload = {:method => camelcase(method), :id => generate_request_id}
 
       # Filter out keys with nil values.
-      payload[:params] = params.reject {|k,v| v.nil?} unless params.nil?
+      payload[:params] = params.reject { |k, v| v.nil? } unless params.nil?
 
       # Return as JSON
       payload.to_json
@@ -407,11 +412,21 @@ module NutshellCrm
     end
 
     # Executes an arbitrary request.
-    def exec_request(payload, override_url = nil)
+    def exec_request(payload, override_url = nil, cache_key =nil)
+      headers = {}
+
+      if @cache && cache_key
+        etag = @cache.read(cache_key)
+      end
+
+      if etag
+        headers["If-None-Match"] = etag
+      end
+
       response = HTTParty.post(override_url.nil? ? @api_url : override_url,
-        :basic_auth => {:username => @username, :password => @api_key},
-        :body => payload,
-        :query => {:output => :json}
+                               :basic_auth => {:username => @username, :password => @api_key},
+                               :body => payload,
+                               :query => {:output => :json}, :headers => headers
       )
 
       unless response['error'].nil?
@@ -421,13 +436,26 @@ module NutshellCrm
         raise "Nutshell API Error: #{error_msg} (#{error_code})"
       end
 
-      response['result']
+      if response.code == 304
+        {"_notModified" => true}
+      else
+        result = response["result"]
+        if @cache &&cache_key && response.headers.has_key?("etag")
+          @cache.write(cache_key, response.headers["etag"])
+        end
+        result
+      end
     end
 
     def camelcase(method_name)
       parts = []
-      method_name.split('_').each_with_index {|str, idx| parts << (idx == 0 ? str : str.capitalize)}
+      method_name.split('_').each_with_index { |str, idx| parts << (idx == 0 ? str : str.capitalize) }
       parts.join ''
     end
+
+    def build_cache_key(params)
+      caller[0][/`([^']*)'/, 1] + "_" + Digest::MD5.hexdigest(params.to_s)
+    end
+
   end
 end
