@@ -31,9 +31,17 @@ module NutshellCrm
       @stub_responses = nil
       @cache = cache
 
-      result = exec_request(build_payload({:username => @username}), 'http://api.nutshell.com/v1/json')
-      api_host = result['api']
-      @api_url = "https://#{api_host}/api/v1/json"
+      if cache
+        @api_url = cache.read("nutshell_api_url")
+      end
+
+      unless @api_url
+        result = exec_request(build_payload({:username => @username}), 'http://api.nutshell.com/v1/json')
+        api_host = result['api']
+        @api_url = "https://#{api_host}/api/v1/json"
+        cache.write("nutshell_api_url", @api_url, :expires_in => 3600) if (@api_url && cache)
+      end
+
     end
 
     # Saves the given e-mail message.
@@ -254,7 +262,7 @@ module NutshellCrm
     # Get the specified Email.
     def get_email(email_id, rev = nil)
       params = {:emailId => email_id, :rev => rev}
-      exec_request build_payload(params) , build_cache_key(params)
+      exec_request build_payload(params), build_cache_key(params)
     end
 
     # Get the specified lead.
@@ -271,7 +279,7 @@ module NutshellCrm
     # Get the specified Note.
     def get_note(note_id, rev = nil)
       params = {:noteId => note_id, :rev => rev}
-      exec_request build_payload(params) , nil, build_cache_key(params)
+      exec_request build_payload(params), nil, build_cache_key(params)
     end
 
     # Get all information for a product (including full price list).

@@ -5,7 +5,7 @@ class FakeCache
     @store = {}
   end
 
-  def write key, value
+  def write key, value ,options =nil
     @store[key] = value
   end
 
